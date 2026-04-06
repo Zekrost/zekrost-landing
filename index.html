@@ -4,10 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zekrost — Software & IA para tu negocio</title>
-    <meta name="description"
-        content="Desarrollamos software e integramos inteligencia artificial para empresas y emprendedores. Entrega en 2-4 semanas.">
+    <title>Zekrost — Software & Inteligencia Artificial para tu negocio</title>
+    <meta name="description" content="Desarrollamos software a medida e integramos inteligencia artificial para empresas y emprendedores. Entrega rápida en 2-4 semanas.">
+    <meta name="keywords" content="desarrollo de software, inteligencia artificial, IA, desarrollo web, aplicaciones móviles, automatización, chatbots, Zekrost, Colombia">
+    <meta name="author" content="Zekrost">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://zekrost.com">
     
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://zekrost.com/">
+    <meta property="og:title" content="Zekrost — Software & Inteligencia Artificial">
+    <meta property="og:description" content="Desarrollamos software e integramos inteligencia artificial para empresas y emprendedores.">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://zekrost.com/">
+    <meta name="twitter:title" content="Zekrost — Software & Inteligencia Artificial">
+    <meta name="twitter:description" content="Desarrollamos software e integramos inteligencia artificial para empresas y emprendedores.">
+
     <link rel="apple-touch-icon" sizes="57x57" href="./images/ico/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="./images/ico/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="./images/ico/apple-icon-72x72.png">
@@ -337,7 +351,7 @@
         <div class="max-w-7xl mx-auto px-6 flex items-center justify-between h-[72px]">
             <!-- Logo -->
             <a href="#" class="flex items-center gap-3">
-                <img src="./images/Logo-Zekrost-Azul-sin-fondo.png" alt="Zekrost Logo" class="w-60">
+                <img src="./images/Logo-Zekrost-Azul-sin-fondo.png" alt="Zekrost Logo" class="w-60" width="240" height="60" fetchpriority="high" decoding="async">
             </a>
             <!-- Desktop links -->
             <div class="hidden md:flex items-center gap-8">
@@ -354,7 +368,7 @@
                     class="font-display text-sm font-bold text-white bg-gradient-to-r from-cyan-500 to-cyan-400 px-6 py-2.5 rounded-full hover:-translate-y-0.5 hover:shadow-lg hover:shadow-cyan-500/30 transition-all duration-300">Cotizar</a>
             </div>
             <!-- Mobile hamburger -->
-            <button id="menuBtn" class="md:hidden flex flex-col gap-1.5 p-2 group" aria-label="Menú">
+            <button id="menuBtn" aria-expanded="false" aria-controls="mobileMenu" class="md:hidden flex flex-col gap-1.5 p-2 group" aria-label="Abrir menú de navegación">
                 <span
                     class="w-6 h-0.5 bg-white rounded transition-transform duration-300 origin-center group-[.open]:translate-y-[4px] group-[.open]:rotate-45"></span>
                 <span class="w-6 h-0.5 bg-white rounded transition-opacity duration-300 group-[.open]:opacity-0"></span>
@@ -380,9 +394,9 @@
         </div>
     </nav>
 
-
+    <main>
     <!-- ═══════════════════════ HERO ═══════════════════════ -->
-    <section
+    <header
         class="relative min-h-screen flex items-center bg-gradient-to-br from-navy-800 via-navy-500 to-navy-600 overflow-hidden">
         <!-- Ambient blobs -->
         <div
@@ -448,7 +462,7 @@
                         <!-- Card -->
                         <div class="relative bg-white/[.04] border border-white/10 rounded-3xl p-8 backdrop-blur-sm">
                             <div class="w-72 h-24 mx-auto mb-6 flex items-center justify-center animate-float">
-                                <img src="./images/Logo-Zekrost-Azul-sin-fondo.png" alt="Zekrost Logo" class="w-80">
+                                <img src="./images/Logo-Zekrost-Azul-sin-fondo.png" alt="Zekrost Logo" class="w-80" width="320" height="80" fetchpriority="high" decoding="async">
                             </div>
                             <div class="space-y-3">
                                 <div class="flex items-center gap-3 bg-white/5 rounded-xl px-4 py-3">
@@ -510,18 +524,18 @@
                 </div>
             </div>
         </div>
-    </section>
+    </header>
 
 
     <!-- ═══════════════════════ SERVICES ═══════════════════════ -->
-    <section id="servicios" class="py-24 lg:py-32 bg-white">
+    <section id="servicios" aria-labelledby="services-title" class="py-24 lg:py-32 bg-white">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center mb-16">
                 <div
-                    class="inline-flex items-center gap-2 font-display text-xs font-bold tracking-[.15em] uppercase text-cyan-500 mb-4">
+                    class="inline-flex items-center gap-2 font-display text-xs font-bold tracking-[.15em] uppercase text-cyan-500 mb-4" aria-hidden="true">
                     <span class="w-7 h-0.5 bg-cyan-500"></span> Servicios
                 </div>
-                <h2
+                <h2 id="services-title"
                     class="font-display text-3xl sm:text-4xl lg:text-5xl font-black text-navy-500 tracking-tight leading-tight">
                     IA aplicada + desarrollo<br class="hidden sm:block"> de software a medida
                 </h2>
@@ -681,9 +695,9 @@
                                     <!-- Slider de imágenes de tu app real -->
                                     <div class="app-slider">
                                         <!-- Reemplaza src con el nombre de las imágenes que adjuntaste ubicadas en tu carpeta images/ -->
-                                        <img src="./images/app-1.png" alt="Iron Bikers App Login">
-                                        <img src="./images/app-3.png" alt="Iron Bikers App Inicio Claro">
-                                        <img src="./images/app-2.png" alt="Iron Bikers App Inicio Oscuro">
+                                        <img src="./images/app-1.png" alt="Iron Bikers App Login" width="300" height="600" loading="lazy" decoding="async">
+                                        <img src="./images/app-3.png" alt="Iron Bikers App Inicio Claro" width="300" height="600" loading="lazy" decoding="async">
+                                        <img src="./images/app-2.png" alt="Iron Bikers App Inicio Oscuro" width="300" height="600" loading="lazy" decoding="async">
                                     </div>
                                 </div>
                             </div>
@@ -701,7 +715,7 @@
                                     class="rounded-[2rem] overflow-hidden bg-navy-800 h-[560px] flex flex-col relative">
                                     <!-- Aquí puedes colocar otra imagen diferente de tu app real -->
                                     <img src="./images/app-2.png" alt="App Screen Trasera"
-                                        class="w-full h-full object-cover">
+                                        class="w-full h-full object-cover" width="260" height="560" loading="lazy" decoding="async">
                                 </div>
                             </div>
                         </div>
@@ -940,13 +954,13 @@
             </div>
         </div>
     </section>
-
+    </main>
 
     <!-- ═══════════════════════ FOOTER ═══════════════════════ -->
-    <footer class="py-8 bg-navy-900 text-center">
+    <footer class="py-8 bg-navy-900 border-t border-navy-700/50 text-center">
         <div class="max-w-7xl mx-auto px-6">
             <div class="h-7 mx-auto mb-4 flex items-center justify-center">
-                <img src="./images/Logo-Zekrost-Azul-sin-fondo.png" alt="Zekrost Logo" class="w-44">
+                <img src="./images/Logo-Zekrost-Azul-sin-fondo.png" alt="Zekrost Logo" class="w-44" width="176" height="44" loading="lazy" decoding="async">
             </div>
             <p class="text-xs text-white/20">© 2026 Zekrost. Todos los derechos reservados. | Mantenedores de <a
                     href="https://github.com/DeijoseDevelop/nix-js" target="_blank"
@@ -963,10 +977,18 @@
 
         // 2. Mobile menu toggle
         const b = document.getElementById('menuBtn'), m = document.getElementById('mobileMenu');
-        b.onclick = () => { b.classList.toggle('open'); m.classList.toggle('hidden') };
-        m.querySelectorAll('a').forEach(a => a.onclick = () => { b.classList.remove('open'); m.classList.add('hidden') });
+        b.onclick = () => { 
+            b.classList.toggle('open'); 
+            m.classList.toggle('hidden');
+            const isExp = b.classList.contains('open');
+            b.setAttribute('aria-expanded', isExp);
+        };
+        m.querySelectorAll('a').forEach(a => a.onclick = () => { 
+            b.classList.remove('open'); 
+            m.classList.add('hidden');
+            b.setAttribute('aria-expanded', 'false');
+        });
 
-        // 3. Nav background on scroll (already above)
     </script>
 </body>
 
